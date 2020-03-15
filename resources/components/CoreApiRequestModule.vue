@@ -71,7 +71,6 @@ module.exports = {
 				path = path.replace( /\{.+?\}/, item );
 			});
 
-//			fetch( '/mediawiki/rest.php' + path )
 			fetch( scriptPath + '/rest.php' + path )
 			.then( response => {
 				return response.json();
