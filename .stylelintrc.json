@@ -1,0 +1,7 @@
+{
+	"extends": "stylelint-config-wikimedia",
+	"ignoreFiles": [
+		"node_modules/**/*.css",
+		"coverage/**/*.css"
+	]
+}

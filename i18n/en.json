@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bill Pirkle"
+		]
+	},
+	"vuecorerestsandbox": "Vue.js Core REST API Sandbox",
+	"vuecorerestsandbox-desc": "Vue.js Core REST API sandbox",
+	"vuecorerestsandbox-summary": "A place to test out Vue.js components and MediaWiki integration",
+	"vuecorerestsandbox-app-welcome": "Hello from Vue!",
+	"vuecorerestsandbox-app-intro": "Below is a minimal form for making calls to the MediaWiki Core REST API from Vue.js. This is an example, so there is limited error checking and some things may not work. All component files can be found in the <code>resources/components</code> directory of this extension.",
+	"vuecorerestsandbox-coreapirequest-title": "Core REST API Request Example",
+	"vuecorerestsandbox-coreapirequest-intro": "Click the button below to request article data from the revisions API for the specified page and display it.",
+	"vuecorerestsandbox-coreapirequest-button": "Make Core REST API Request",
+	"vuecorerestsandbox-coreapirequest-pending": "Waiting..."
+}

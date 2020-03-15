@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bill Pirkle"
+		]
+	},
+	"vuecorerestsandbox": "The name of the extension's special page in Special:SpecialPages",
+	"vuecorerestsandbox-desc": "{{desc}}",
+	"vuecorerestsandbox-summary": "Description appearing on top of Special:VueCoreRestSandbox.",
+	"vuecorerestsandbox-app-welcome": "Header message for App component",
+	"vuecorerestsandbox-app-intro": "Intro text for App component",
+	"vuecorerestsandbox-coreapirequest-title": "Title for CoreApiRequestModule",
+	"vuecorerestsandbox-coreapirequest-intro": "Intro text for CoreApiRequestModule",
+	"vuecorerestsandbox-coreapirequest-button": "Button label for CoreApiRequestModule",
+	"vuecorerestsandbox-coreapirequest-pending": "Pending message for CoreApiRequestModule"
+}

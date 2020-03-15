@@ -1,0 +1,75 @@
+{
+	"name": "VueCoreRestSandbox",
+	"author": [
+		"Bill Pirkle"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:BoilerPlate",
+	"descriptionmsg": "vuecorerestsandbox-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\VueCoreRestSandbox\\": "includes/"
+	},
+	"config": {},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Extension\\VueCoreRestSandbox\\Hooks::onBeforePageDisplay"
+	},
+	"MessagesDirs": {
+		"VueCoreRestSandbox": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"VueCoreRestSandboxAlias": "VueCoreRestSandbox.alias.php"
+	},
+	"SpecialPages": {
+		"VueCoreRestSandbox": "MediaWiki\\Extension\\VueCoreRestSandbox\\SpecialVueCoreRestSandbox"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "VueCoreRestSandbox/resources"
+	},
+	"ResourceModules": {
+		"ext.vueCoreRestSandbox": {
+			"dependencies": [
+				"ext.vueCoreRestSandbox.components",
+				"ext.vueCoreRestSandbox.plugins",
+				"vue"
+			],
+			"messages": [],
+			"styles": [],
+			"scripts": [
+				"init.js"
+			]
+		},
+		"ext.vueCoreRestSandbox.plugins": {
+			"packageFiles": [
+				"plugins/index.js",
+				"plugins/i18n.js"
+			]
+		},
+		"ext.vueCoreRestSandbox.components": {
+			"dependencies": [
+				"mediawiki.language.names"
+			],
+			"messages": [
+				"vuecorerestsandbox-app-welcome",
+				"vuecorerestsandbox-app-intro",
+				"vuecorerestsandbox-coreapirequest-title",
+				"vuecorerestsandbox-coreapirequest-intro",
+				"vuecorerestsandbox-coreapirequest-button",
+				"vuecorerestsandbox-coreapirequest-pending"
+			],
+			"styles": [],
+			"packageFiles": [
+				"components/index.js",
+				"components/App.vue",
+				"components/CoreApiRequestModule.vue"
+			]
+		}
+	},
+	"manifest_version": 2
+}
